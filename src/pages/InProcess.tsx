@@ -1,11 +1,13 @@
+import { Typography, Grid } from "@mui/material";
 import risolva from "../assets/images/risolva.svg";
 export const InProcess = () => {
-  console.log(risolva);
   return (
-    <div>
-      <h1>Pagina en construccion</h1>
-
+    <Grid container>
+      <Typography variant="h4" mb={2} textAlign="center">
+        {" "}
+        Pagina en construccion
+      </Typography>
       <img src={risolva} alt="logo" />
-    </div>
+    </Grid>
   );
 };

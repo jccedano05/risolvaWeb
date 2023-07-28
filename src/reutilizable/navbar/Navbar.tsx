@@ -8,14 +8,19 @@ import { Servicios } from "../../pages/Servicios";
 import { Productos } from "../../pages/Productos";
 import { Contacto } from "../../pages/Contacto";
 
-import { MenuOptions } from "./MenuOptions";
+import { MenuOptionsComputer } from "./MenuOptionsComputer";
 import { ColorsApp } from "../../utils/colors";
 
 export const Navbar = () => {
   return (
-    <Grid container justifyContent={"space-between"}>
+    <Grid
+      container
+      justifyContent={"space-between"}
+      width="100vw"
+      sx={{ overflowX: "hidden" }}
+    >
       <BrowserRouter>
-        <MenuOptions />
+        <MenuOptionsComputer />
         <Grid
           container
           justifyContent="center"

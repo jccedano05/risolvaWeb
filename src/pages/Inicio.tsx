@@ -1,10 +1,11 @@
 import React from "react";
 import { Typography } from "@mui/material";
+import { InProcess } from "./InProcess";
 
 export const Inicio = () => {
   return (
     <div>
-      <Typography variant="h2"> Inicio Page</Typography>
+    <InProcess />
     </div>
   );
 };
