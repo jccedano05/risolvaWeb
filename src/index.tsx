@@ -5,15 +5,16 @@ import App from "./App";
 import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import { ColorsApp } from "./utils/colors";
 
 const theme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#405364",
+      main: ColorsApp.main,
     },
     secondary: {
-      main: "#b500d4",
+      main: ColorsApp.secondary,
     },
   },
 });

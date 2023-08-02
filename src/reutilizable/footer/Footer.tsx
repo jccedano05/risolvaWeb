@@ -4,43 +4,40 @@ import { ColorsApp } from "../../utils/colors";
 
 import Image from "mui-image";
 
-import instagramLogo from "../../assets/logos/Instagram Logo.svg";
-import twitterLogo from "../../assets/logos/Twitter Logo.png";
-import linkedInLogo from "../../assets/logos/LinkedIn Logo.png";
+import risolvaLogoWhite from "../../assets/images/risolva logos/RISOLVA AUTOMATIZACIONES Blanco.png";
+
+import { SocialMediaICompanyIcons } from "../general/SocialMediaICompanyIcons";
 
 export const Footer = () => {
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ bgcolor: ColorsApp.darkSecondary }}>
       <Toolbar>
         <Grid
           container
           justifyContent="space-around"
           //   alignItems={"baseline"}
           alignItems={"center"}
-          minHeight={"30vh"}
+          minHeight={"25vh"}
           pt={1}
-          px={2}
-          bgcolor={ColorsApp.main}
+          pb={2}
         >
-          <Grid item md={3} xs={12}>
+          <Grid item lg={3} md={3} xs={12}>
             <Grid container direction="column">
+              <Image src={risolvaLogoWhite} width={"80%"} />
+
               <Typography
-                variant="h4"
-                fontWeight={600}
-                mb={1}
+                mt={2}
+                variant="subtitle2"
                 textAlign="initial"
                 color="white"
               >
-                Quienes somos?
-              </Typography>
-              <Typography variant="subtitle2" textAlign="initial" color="white">
                 Somos una empresa mexicana dedicada a la venta de
                 instrumentación y servicios de ingeniería para toda la
                 industria.
               </Typography>
             </Grid>
           </Grid>
-          <Grid item md={3} xs={12}>
+          <Grid item lg={3} md={3} xs={12}>
             <Typography
               variant="h4"
               fontWeight={600}
@@ -71,7 +68,7 @@ export const Footer = () => {
               <u>Correo:</u> contacto@risolva.com.mx
             </Typography>
           </Grid>
-          <Grid item md={2} xs={12}>
+          <Grid item lg={2} md={3} xs={12}>
             <Typography
               variant="h4"
               fontWeight={600}
@@ -81,19 +78,7 @@ export const Footer = () => {
             >
               Siguenos
             </Typography>
-            <Grid container justifyContent="center" alignItems="center" mt={2}>
-              <Button variant="outlined" sx={{ width: "10%", p: 0 }}>
-                <Image src={linkedInLogo} width={"60%"} />
-              </Button>
-
-              <Button variant="outlined" sx={{ width: "10%", p: 0 }}>
-                <Image src={instagramLogo} width={"60%"} />
-              </Button>
-
-              <Button variant="outlined" sx={{ width: "10%", p: 0 }}>
-                <Image src={twitterLogo} width={"60%"} />
-              </Button>
-            </Grid>
+            <SocialMediaICompanyIcons />
           </Grid>
         </Grid>
       </Toolbar>

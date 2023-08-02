@@ -24,8 +24,6 @@ export const Navbar = () => {
         <Grid
           container
           justifyContent="center"
-          px={2}
-          py={2}
           bgcolor={ColorsApp.backgroundColorLight}
           minHeight="60vh"
         >
